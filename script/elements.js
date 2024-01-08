@@ -1,0 +1,5 @@
+export const display = document.querySelector('.current')
+export const memory = document.querySelector('.memory')
+export const buttons = document.querySelectorAll('.keys button')
+export const clear = document.querySelector('.clear')
+export const del = document.querySelector('.del')
