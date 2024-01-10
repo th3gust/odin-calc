@@ -3,38 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Aula 13</title>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <script src="./script/index.js" type="module" defer></script>
 </head>
 <body>
-    <div class="container">
-        <div class="display">
-            <span class="memory"></span>
-            <span class="current"></span>
+    <main>    
+    <div id = 'calc' class="calc d-flex">
+        <div id="div-nome" class="div-nome d-flex">
+            <p>Calculadora</p>
         </div>
-        <div class="control-buttons">
-            <button type="button" class="clear">CLEAR</button>
-            <button type="button" class="delete">DELETE</button>
+        <div id="div-display" class="div-display d-flex">
+            <p id="display" class = 'display'>0</p>
         </div>
-        <div class="keys">
-            <button type="button" value="7">7</button>
-            <button type="button" value="8">8</button>
-            <button type="button" value="9">9</button>
-            <button type="button" class = 'operator' id = 'div' value="/">÷</button>
-            <button type="button" value="4">4</button>
-            <button type="button" value="5">5</button>
-            <button type="button" value="6">6</button>
-            <button type="button" class = 'operator' id = 'mult' value="*">×</button>
-            <button type="button" value="1">1</button>
-            <button type="button" value="2">2</button>
-            <button type="button" value="3">3</button>
-            <button type="button" class = 'operator' id = 'sub' value = '-'>–</button>
-            <button type="button" value = '.'>.</button>
-            <button type="button" value="0">0</button>
-            <button type="button" class = 'operator' id = 'equal' value = '='>=</button>
-            <button type="button" class = 'operator' id = 'sum' value = '+'>+</button>
+        <div id="div-teclas" class="div-teclas d-flex">
+            <button id = 't-limpar' class="tecla ctrl">CL</button>
+            <button id = 't-back' class="tecla ctrl">BSC</button>
+            <button id = 't(' class="tecla num">(</button>
+            <button id = 't)' class="tecla num">)</button>
+            <button id = 't7' class="tecla num">7</button>
+            <button id = 't8' class="tecla num">8</button>
+            <button id = 't9' class="tecla num">9</button>
+            <button id = 't-soma' class="tecla teclaOp op">+</button>
+            <button id = 't4' class="tecla num">4</button>
+            <button id = 't5' class="tecla num">5</button>
+            <button id = 't6' class="tecla num">6</button>
+            <button id = 't-subtracao' class="tecla teclaOp op">-</button>
+            <button id = 't1' class="tecla num">1</button>
+            <button id = 't2' class="tecla num">2</button>
+            <button id = 't3' class="tecla num">3</button>
+            <button id = 't-multiplicacao' class="tecla teclaOp op">x</button>
+            <button id = 't0' class="tecla num">0</button>
+            <button id = 't-separador' class="tecla num">,</button>
+            <button id = 't-igual' class="tecla teclaOp res">=</button>
+            <button id = 't-divisao' class="tecla teclaOp op">/</button>
         </div>
     </div>
+</main>
 </body>
 </html>
